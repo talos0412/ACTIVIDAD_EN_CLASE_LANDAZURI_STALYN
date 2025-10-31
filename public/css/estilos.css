@@ -1,0 +1,39 @@
+input[type=text] {
+    caret-color: green;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background-clip: padding-box;
+    box-shadow: 3px 3px 10px skyblue;
+}
+
+textarea {
+    line-height: 1.5;
+    word-spacing: 6px;
+    text-indent: 10px;
+    overflow-wrap: break-word;
+    direction: ltr;
+}
+
+select {
+    text-align-last: center;
+    appearance: none;
+    font-variant: small-caps;
+    cursor: pointer;
+    min-height: 30px;
+}
+
+input[type="checkbox"] {
+    accent-color: greenyellow;
+    margin-left: 20px;
+    clip-path: circle(50%);
+    aspect-ratio: 1 / 1;
+    rotate: 180deg;
+}
+
+input[type="radio"] {
+    scale: 0.7;
+    outline: 2px solid;
+    filter: brightness(0.5);
+    pointer-events: auto;
+    margin-block-start: 10px;
+}

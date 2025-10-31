@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario CSS interno</title>
+
+    <style>
+        input[type=text]{
+            caret-color: green;
+        }
+
+        textarea{
+            line-height: 1.5;
+        }
+
+        select{
+            text-align-last: center;
+        }
+
+        input[type="checkbox"] {
+            accent-color: greenyellow;
+        }
+
+        input[type="radio"]{
+            scale: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formulario de registro de actividades <br> para universitarios</h1>
+
+    <label for="nombre">Ingrese su nombre:</label>
+    <input type="text" id="nombre" name="nombre" 
+        placeholder="Stalyn Landazuri"
+        style="text-transform: capitalize;">
+    <br><br>
+
+    <label for="descripcion">Escriba en máximo 100 palabras sus objetivos para los cursos:</label>
+    <br>
+    <textarea name="descripcion" id="descripcion" rows="4" cols="53" 
+        maxlength="100" placeholder="Descripción"
+        style="word-spacing: 10px;"></textarea>
+    <br><br>
+
+    <label for="universidad">Universidad:</label><br>
+    <select name="universidad" id="universidad"
+        style="appearance: none;">
+        <option value="" disabled selected>Seleccione una</option>
+        <option value="espe">ESPE</option>
+        <option value="uce">UCE</option>
+        <option value="utpl">UTPL</option>
+    </select>
+    <br><br>
+
+    <label>Sexo:</label><br>
+    <input type="radio" name="sexo" id="hombre" value="hombre" style="outline: 2px solid;">
+    <label for="hombre">Hombre</label>
+
+    <input type="radio" name="sexo" id="mujer" value="mujer" style="outline: 2px solid;">
+    <label for="mujer">Mujer</label>
+
+    <input type="radio" name="sexo" id="otro" value="otro" style="outline: 2px solid;">
+    <label for="otro">Otro</label>
+    <br><br>
+
+    <label>Actividades:</label><br>
+    <input type="checkbox" name="actividades[]" id="visita" value="visita"
+        style="margin-left: 20px;">
+    <label for="visita">Visita al museo</label><br>
+
+    <input type="checkbox" name="actividades[]" id="taller" value="taller"
+        style="margin-left: 20px;">
+    <label for="taller">Taller de arte</label><br>
+
+    <input type="checkbox" name="actividades[]" id="excursion" value="excursion"
+        style="margin-left: 20px;">
+    <label for="excursion">Excursión</label>
+
+
+</body>
+</html>
